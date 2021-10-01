@@ -156,14 +156,14 @@ print([minwss_collapsed_global, maxwss_collapsed_global, minwss_per_frame, maxws
 ##Plot the distribution of wss for all frames
 import matplotlib.pyplot as plt
 fig=plt.hist(np.array(list(wssByEdgePointAll.items()))[:,1].astype('float'),100)
-plt.xlabel("WSS value")
+plt.xlabel("WSS value(mPa)")
 plt.ylabel("Frequency")
-plt.savefig(folder +fname.split(".tif")[0]+"WSS_distribution.png")
+plt.savefig(folder +fname.split(".tif")[0]+"_WSS_distribution.png")
 plt.close()
 fig=plt.hist(np.array(list(wssByEdgePointAll.items()))[:,1].astype('float'),100,density=True)
 plt.xlabel("WSS value(mPa)")
 plt.ylabel("Probability")
-plt.savefig(folder +fname.split(".tif")[0]+"WSS_Probability_distribution.png")
+plt.savefig(folder +fname.split(".tif")[0]+"_WSS_Probability_distribution.png")
 plt.close()
 
 
