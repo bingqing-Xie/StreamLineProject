@@ -102,7 +102,7 @@ class SubFun:
             line2 = LineString([(xmin, xmin * k + line2_b), (xmax, xmax * k + line2_b)])
         else:
             line1 = LineString([(a[0], ymin), (a[0], ymax)])
-            line2 = LineString([(a[1], ymin), (a[1], ymax)])
+            line2 = LineString([(b[0], ymin), (b[0], ymax)])
 
         cd = LineString(contour)
         inter1 = cd.intersection(line1)
